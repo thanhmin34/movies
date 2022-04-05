@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#191a1f] font-body;
+    @apply select-none;
+  }
+}
+@layer components {
+  .container-page {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-page-xl {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .text-overflow-1 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  .text-overflow-2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .movie-list .swiper-slide {
+    height: auto;
+    width: 300px;
+  }
+  .border-left {
+    border-left: 1px solid #24252a;
+  }
+  .border-right {
+    border-right: 1px solid #24252a;
+  }
+  .swiper-wrapper.movieList .swiper-slide {
+    width: 250px;
+  }
+  .border-all {
+    border: 1px solid #3a3b43;
+  }
+  .border-bg-basic {
+    border: 1px solid #696b74;
+  }
+  .text-out-line {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .text-active {
+    border-bottom: 1px solid #d22f27;
+
+    color: #d22f27;
+  }
+  .paginate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @apply gap-5;
+    .selected {
+      @apply text-basic;
+    }
+  }
+  .banner .swiper {
+    height: 100%;
+  }
+  .scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #666666;
+    border-radius: 10px;
+  }
+  .scrollbar::-webkit-scrollbar-track {
+    // background-color: #999999;
+  }
+  .search-block .input-btn:focus ~ .search-btn {
+    overscroll-behavior-y: contain;
+
+    opacity: 1;
+  }
+  // .-webkit-scrollbar {
+  // }
+  // .-webkit-scrollbar-thumb {
+  //   border-radius: 5px;
+  //   // background-color: grey;
+  // }
+  // .loading {
+  //   width: 50px;
+  //   height: 50px;
+  //   border-radius: 50%;
+  //   border: 4px solid #ccc;
+  //   border-left: 3px solid transparent;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   animation: spin 2s linner infinity;
+  // }
+  // @keyframes spin {
+  //   to {
+  //     translate: rorate(1turn);
+  //   }
+  // }
+  // .input-btn:focus ~ .block-search {
+  //   @apply h-[200px];
+  // }
+}
+// .swiper-slide {
+//   width: 150px;
+// }
+
+@media screen and (min-width: 640px) {
+  .container-page {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-page {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .container-page {
+    width: 900px;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .container-page {
+    width: 1001px;
+  }
+}

@@ -1,0 +1,33 @@
+// mobile
+@media screen and (max-width: 739px) {
+  .none {
+    display: none;
+  }
+  .sw {
+    width: 60px;
+  }
+}
+
+// table
+@media screen and (min-width: 739px) and (max-width: 1023px) {
+  .none {
+    display: none;
+  }
+  .mw {
+    width: 100px;
+  }
+}
+
+// pc medium
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .none {
+    display: none;
+  }
+  .lw {
+    width: 150px;
+  }
+}
+//pc high
+@media screen and (min-width: 1280px) and (max-width: 1550px) {
+}
